@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+:root {
+  --COLOR-GRAY: #8f8f8f;
+  --COLOR-GRAY-DARK: #1d1b1b;
+  --COLOR-GRAY-LIGHT: #d99ede;
+  --COLOR-PLANNING: #98d9a3;
+  --COLOR-ONGOING: #98c1d9;
+  --COLOR-DONE: #ee6c4d;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

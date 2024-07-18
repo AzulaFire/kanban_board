@@ -1,0 +1,231 @@
+.App {
+  background: rgb(160, 171, 173);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align children at the top */
+  align-items: center; /* Center children horizontally */
+}
+
+/* Media query for desktop views */
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row; /* Change to row layout */
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #000;
+  padding-top: 0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #141414;
+  color: #fff;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.columns {
+  /* background: #141414; */
+  min-height: 20rem;
+  color: #fff;
+  min-width: 260px;
+  margin: 2rem 0.5rem;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: dashed transparent 4px;
+  -webkit-box-shadow: 10px 12px 5px -4px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 10px 12px 5px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 10px 12px 5px -4px rgba(0, 0, 0, 0.35);
+}
+
+.columns.drop {
+  border-color: #fff;
+}
+
+.task {
+  background: #fff;
+  color: #000;
+  min-height: 5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  cursor: move;
+}
+
+.status {
+  font-size: 0.8rem;
+  background: var(--COLOR-GRAY-LIGHT);
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.PLANNED {
+  background: var(--COLOR-PLANNING);
+}
+
+.ONGOING {
+  background: var(--COLOR-ONGOING);
+}
+
+.TESTING {
+  background: var(--COLOR-GRAY-LIGHT);
+}
+
+.DONE {
+  background: var(--COLOR-DONE);
+}
+
+.title {
+  font-weight: 700;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.titleWrapper button {
+  all: unset;
+  color: #fff;
+  background: #141414;
+  padding: 0.5rem;
+  border-radius: 4px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.titleWrapper button:hover {
+  background: #373535;
+}
+
+.Modal {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.modalContent {
+  background: #3d3d3d;
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+  height: 8rem;
+  width: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.modalContent button {
+  color: #fff;
+  font-weight: 600;
+  background: #141414;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background: #373535;
+  color: #fff;
+}
+
+input {
+  width: 75%;
+  height: fit-content;
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: rgb(245, 245, 245);
+}
+
+.iconsWrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.deleteIcon {
+  z-index: 5;
+  cursor: pointer;
+  padding: 2px;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.deleteIcon:hover {
+  color: rgb(78, 78, 78);
+}
+
+.editIcon {
+  z-index: 5;
+  cursor: pointer;
+  padding: 2px;
+  height: 25px;
+  width: 25px;
+}
+
+.editIcon:hover {
+  color: rgb(78, 78, 78);
+}
+
+.taskWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.planned {
+  background: #2b96da;
+}
+.ongoing {
+  background: #f2bc1b;
+}
+
+.testing {
+  background: #f14141;
+}
+
+.done {
+  background: #0abf8c;
+}
